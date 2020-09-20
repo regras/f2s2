@@ -6,3 +6,4 @@ log.txt
 README*
 results.txt
 digestFiles.txt
+*.o
