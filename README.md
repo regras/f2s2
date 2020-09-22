@@ -1,7 +1,7 @@
 # F2S2 - Fast Forensic Similarity Search Strategy
 An implementation of F2S2 similarity search strategy.
 
-Based on:
+This is a proof-of-concept based on the article:
 Christian Winter, Markus Schneider, York Yannikos,
 F2S2: Fast forensic similarity search through indexing piecewise hash signatures,
 Digital Investigation,
@@ -10,6 +10,8 @@ Volume 10, Issue 4,
 Pages 361-371,
 ISSN 1742-2876,
 https://doi.org/10.1016/j.diin.2013.08.003.
+
+Although it may differ at some point from the original ideia.
 
 # Instructions
 F2S2, uses pre-calculated ssdeep's digest, so before using it, generate the digests from both datasets, the known and the target. Storing the known's at files which MUST be listed at a file named "cb_known_set.txt", and the target's must be stored at a file name "cb_target_set.txt".
