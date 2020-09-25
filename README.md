@@ -14,7 +14,7 @@ https://doi.org/10.1016/j.diin.2013.08.003.
 It may differ at some points from the original ideia.
 
 # Instructions
-F2S2, uses pre-calculated ssdeep's digest, so before using it, generate the digests from both datasets, the known and the target. Storing the known's at files which MUST be listed at a file named "cb_known_set.txt", and the target's must be stored at a file name "cb_target_set.txt".
+F2S2 uses pre-calculated ssdeep's digests that it generates from both datasets: The known and the target datasets. The known dataset digests must be in a file named "cb_known_set.txt", and the target digests must be in a file called "cb_target_set.txt".
 
 ## Compiling
 
@@ -32,7 +32,7 @@ And choose among the options:
 
 1.Insert the digests into the index table.
 
-2.After inserting the digests into the index table, search for the target database into de index table.
+2.Search for the target database into de index table.
 
 ## Ouput
 
@@ -40,8 +40,8 @@ The output is a list of similar files. The tool only indicates possible matches,
 
 ## Notes
 
-The search results are listed at "resultados.txt"
+The search results are stored at file "results.txt"
 
-To save RAM, the known output are just the known-file's IDs, so, the relation filename vs iD are listed on the "iDvsFile.txt" file.
+To save RAM, the known output are just the known-file's IDs. The filename can be obtained from the file "iDvsFile.txt".
 
-The parameters like the n-gram size, e-key size, output file name etc, can be changed at "config.h" file.
+The parameters like n-gram size, e-key size, output file name etc. can be set in file "config.h".
